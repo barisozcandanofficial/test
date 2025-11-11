@@ -11,5 +11,5 @@ export const r2Client = new S3Client({
 });
 
 export const BUCKET_NAME = process.env.R2_BUCKET_NAME!;
-export const CHUNK_SIZE = 5 * 1024 * 1024; // 5 MB
+export const CHUNK_SIZE = 4 * 1024 * 1024; // 4 MB (Vercel limit için optimize edildi)
 
